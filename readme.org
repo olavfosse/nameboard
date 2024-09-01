@@ -1,0 +1,5 @@
+* namecanvas
+- https://github.com/lumberdev/tesserae
+- https://emacs.ch/@olav/112880077243513855
+- https://tldraw.com
+  - Renders to the DOM, doesn't use canvas
