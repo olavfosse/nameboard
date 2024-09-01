@@ -6,7 +6,12 @@
 
 
 * dev
-
+run:
 #+begin_src sh
   $ mkdir -p public/tldraw && cp node_modules/tldraw/tldraw.css public/tldraw/tldraw.css
+#+end_src
+
+mb run:
+#+begin_src sh
+  $ npm install --save-dev shadow-cljs
 #+end_src
