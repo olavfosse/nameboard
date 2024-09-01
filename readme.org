@@ -1,3 +1,7 @@
+I love using https://tldraw.com for sketching and diagramming!
+
+What if I could merge a tldraw whiteboard with a Clojure namespace?
+
 * namecanvas
 - https://github.com/lumberdev/tesserae
 - https://emacs.ch/@olav/112880077243513855
@@ -15,3 +19,9 @@ mb run:
 #+begin_src sh
   $ npm install --save-dev shadow-cljs
 #+end_src
+
+
+* plan
+
+- Eval Hello World
+- https://tldraw.dev/#4-Sync-betweens-users
