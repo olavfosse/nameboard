@@ -1,0 +1,16 @@
+{:deps true
+
+ ;; SECURITY: shadow-cljs by default tries random ports
+ :nrepl {:port 3150}
+ :socket-repl false
+ ;;^^DO^NOT^REMOVE^^
+ 
+ :dev-http {3151 {:root "public"
+                  :host "0.0.0.0"}}
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js/compiled"
+        :asset-path "/js/compiled"
+        :modules {:main {:init-fn no.olavfosse.nameboard/init!}}}}
+
+ :source-paths ["src"]}
