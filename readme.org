@@ -3,3 +3,10 @@
 - https://emacs.ch/@olav/112880077243513855
 - https://tldraw.com
   - Renders to the DOM, doesn't use canvas
+
+
+* dev
+
+#+begin_src sh
+  $ mkdir -p public/tldraw && cp node_modules/tldraw/tldraw.css public/tldraw/tldraw.css
+#+end_src
