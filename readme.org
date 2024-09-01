@@ -1,13 +1,42 @@
-I love using https://tldraw.com for sketching and diagramming!
+This project is incubating. There is nothing to use yet. Feel free to
+dm me on Clojurians Slack if you wanna help me realise this or
+exchange ideas.
 
-What if I could merge a tldraw whiteboard with a Clojure namespace?
+I probably won't realise this for the forseeable future as I don't
+have time. There's only so many Sundays in a week.
 
-* namecanvas
+---
+
+I love using https://tldraw.com for sketching and diagramming, it
+helps me organize my thoughts and develop my ideas.
+
+What if instead of working with my namespaces in a lame old text
+buffer, I used a tldraw whiteboard? Now that would be delightful.
+
+- A namespace could be rendered as a chain of forms and comments.
+- Order-independent forms, e.g Rich comments could be unchained. In
+  the namespace file they could be appended to the bottom
+- UI components could run inside the canvas allowing for interactive
+  UI development.
+  - E.g eval a component and it renders inside the canvas
+- Interactive data visualizations, such as Vega-lite could also run
+  inside the canvas
+- Additional dev tools could be built as tldraw tools and exposed in
+  the toolbar
+
+The infrastructure is already laid out for us:
+
+- tldraw is [[https://tldraw.dev][sdk-first]] and designed to be built upon.
+- nREPL allows for several clients, so nameboard can happily coexist
+  with CIDER
+- Clojure already has a mechanism for annotating forms, e.g metadata
+- There is [[https://github.com/clj-commons/rewrite-clj][tooling for programmatically editing Clojure code]]
+- There is a [[https://github.com/scicloj/kindly][specification for displaying Clojure forms]] for data
+  visualization.
+
 - https://github.com/lumberdev/tesserae
+- https://emacs.ch/@olav/112803353088286349
 - https://emacs.ch/@olav/112880077243513855
-- https://tldraw.com
-  - Renders to the DOM, doesn't use canvas
-
 
 * dev
 run:
@@ -20,8 +49,12 @@ mb run:
   $ npm install --save-dev shadow-cljs
 #+end_src
 
-
-* plan
-
-- Eval Hello World
+* /plan/
+- Learn TLdraw SDK, play around and do random mini examples
+- Make a very basic Clojure form tool, it should work like the text
+  tool, but create a Clojure form instead of a text block.
+- Make it possible "eval" a Clojure form resulting in a new Clojure
+  form spawning on the canvas with the expression :result
+- Hook the canvas up to a nREPL connection
+- Eval "hello, world"
 - https://tldraw.dev/#4-Sync-betweens-users
